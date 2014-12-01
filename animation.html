@@ -1,6 +1,34 @@
-<!--Clouds will react to left and right arrows -->
 <html>
+
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+  <title>Clouds at Sunset</title>
+</head>
+
+<style>
+
+h1{
+  text-align: center;
+  margin-bottom: -15px;
+  font-family: 'Bad Script', cursive;
+  color: RoyalBlue;
+}
+
+canvas{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  display: block;
+  border: 5px solid rgb(247, 175, 201);
+}
+</style>
+
 <body>
+
+  <h1><-----clouds-----></h1>
+  
   <canvas id="the_canvas" width="700" height="600"></canvas>
 
   <script>
@@ -105,7 +133,23 @@
     ctx.arc(x+165, 50, 50, 0, 2*Math.PI);
     ctx.fillStyle = "rgba(247, 175, 201, 0.6)";
     ctx.fill();
-
+/*
+    // begin shadow cloud1 add 450
+    ctx.beginPath();
+    ctx.arc(x+70, 467, 50, 0, 2*Math.PI);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fill();
+    //
+    ctx.beginPath();
+    ctx.arc(x+115, 480, 50, 0, 2*Math.PI);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fill();
+    //
+    ctx.beginPath();
+    ctx.arc(x+165, 450, 50, 0, 2*Math.PI);
+    ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+    ctx.fill();
+*/
     // cloud2
     ctx.beginPath();
     ctx.arc(370+x, 87, 50, 0, 2*Math.PI);
@@ -275,9 +319,11 @@
   };
 
 
+  // this call the draw function sets the speed at which the idems go
   setInterval(draw, 150);
 
 
 </script>
+
 </body>
 </html>
