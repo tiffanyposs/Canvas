@@ -1,0 +1,35 @@
+body{
+  background-color: cornflowerblue;
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  text-shadow: 3px 3px 0 white;
+}
+
+.color1{
+  color: mediumvioletred;
+}
+.color2{
+  color: darkcyan;
+}
+.color3{
+  color: orchid;
+}
+.color4{
+  color: royalblue;
+}
+
+#the_canvas{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  border: 10px solid white;
+  border-radius: 300px;
+}

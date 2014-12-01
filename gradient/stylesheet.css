@@ -1,0 +1,22 @@
+body{
+  background-color: cornflowerblue;
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  font-family: 'Bad Script', cursive;
+  color: white;
+}
+
+#the_canvas{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: block;
+  border: 10px solid darkturquoise;
+  border-radius: 70px;
+}
